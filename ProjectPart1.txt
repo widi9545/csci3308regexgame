@@ -1,0 +1,16 @@
+﻿1) Regex Memory Game
+2) An interactive memory game/regex study guide to help you work on your regex – so you can easily remember it for the exam
+3) It makes regex studying fun
+4) This will help incoming students to easily study for exams and the regex expressions on exams
+5) Learning Regex in depth – no prior experience working with our teammates – not much past database experience
+6) Learning the new technologies and communicating effectively
+7)Github
+
+
+8)
+
+User: as a user, I want to play the game so that I can learn regex
+
+functional:  timer, need questions and answers, choose difficulty, user should be able to view scoreboard
+
+non-func: upon completion displays, display cards when clicked, quit buttion 
