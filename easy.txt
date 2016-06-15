@@ -1,0 +1,11 @@
+contains a:a
+contains ing:ing
+ends with s:s$
+starts with q:^q
+starts with t,u, or v:^[tuv]
+any character:.
+match gray or grey:gr[ae]y
+contains a number:[0-9]
+blank line:^$
+ends with a vowel:[aeiou]$
+

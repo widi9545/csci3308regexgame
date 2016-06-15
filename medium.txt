@@ -1,0 +1,10 @@
+starts with consonant:^[a-z-[aeiou]]
+contains .:\.
+word break:\b
+contains word and:^and[\b]
+contains only capital letters:^[A-Z]*$
+first three characters are numbers:^[0-9]{3}
+doesn't start with a:^[^a]
+contains double letters:([a-zA-Z])\1
+number between 1000 and 9999:\b[1-9][0-9]{3}\b
+
