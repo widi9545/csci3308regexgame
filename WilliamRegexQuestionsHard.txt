@@ -1,0 +1,8 @@
+Look for Upper Case, then Lower Case letters:
+^[A-Z]([a-z][A-Z]?)+$
+(http://stackoverflow.com/questions/4050381/regular-expression-for-checking-if-capital-letters-are-found-consecutively-in-a)
+Match a Username that has letters and numbers, up to 16 characters)
+^[a-z0-9]{0-16}$/
+(http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149)
+
+
