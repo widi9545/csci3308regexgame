@@ -4,5 +4,7 @@ Look for Upper Case, then Lower Case letters:
 Match a Username that has letters and numbers, up to 16 characters)
 ^[a-z0-9]{0-16}$/
 (http://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149)
-
+How to Match Zip Code:
+\b\d{5}
+(http://www.codeproject.com/Tips/989012/Validate-and-Find-Addresses-with-RegEx)
 
