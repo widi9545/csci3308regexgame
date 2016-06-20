@@ -1,0 +1,11 @@
+Easy Questions:
+Check Beginning of File: ^
+Check End of File: $
+Check if letter a is at beginning of File: ^[a]
+Check if word has a space: \s
+Check if word has a tab: \s
+Match the numbers 0-9: [0-9]
+Make sure there are some numbers that are NOT at the end of file: $[$0-9]
+Match a series of numbers and characters: [a-z0-9]
+Match some capital letters and numbers: [A-Z0-9]
+
