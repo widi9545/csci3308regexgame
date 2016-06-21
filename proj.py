@@ -11,7 +11,7 @@ black = (0,0,0)
 blue=(0,0,255)
 
               
-class Pane(object):
+class Pane(object): 
     def __init__(self):
         pygame.init()
         self.font = pygame.font.SysFont('Arial', 25)
@@ -21,7 +21,7 @@ class Pane(object):
         pygame.display.update()
 
 	
-	def addRect(self):
+    def addRect(self):
 		pygame.draw.rect(self.screen,blue,(200,150,100,50))
 		pygame.display.flip()
 		#done = False				
