@@ -3,7 +3,7 @@ DROP TABLE answers;
 DROP TABLE questionsMissed;
 DROP TABLE highscores;
 
-CREATE TABLE questions(qid integer primary key, question char(50), difficulty integer);
+CREATE TABLE questions(qid integer primary key, question char(75), difficulty integer);
 CREATE TABLE answers(aid integer primary key, qid integer, answer char(50));
 CREATE TABLE questionsMissed(qid integer, aid integer);
 CREATE TABLE highscores(scores integer, difficulty integer);
@@ -66,6 +66,12 @@ INSERT INTO questions VALUES(27, "Match lowercase letter or number",1);
 INSERT INTO answers VALUES(27,27,"[a-z0-9]");
 INSERT INTO questions VALUES(28, "Match capital letter or number",1);
 INSERT INTO answers VALUES(28,28,"[A-Z0-9]");
+INSERT INTO questions VALUES(29, "Look for uppercase, then lower case letters", 3);
+INSERT INTO answers VALUES(29,29,"^[A-Z]([a-z][A-Z]?)+$");
+INSERT INTO questions VALUES(30, "Match a username that has letters and numbers, up to 16 characters", 3);
+INSERT INTO answers VALUES(30,30,"^[a-z0-9]{0-16}$");
+INSERT INTO questions VALUES(31, "Match a zip code", 3);
+INSERT INTO answers VALUES(31,31,"\b\d{5}");
 
 
 
