@@ -51,4 +51,8 @@ if __name__ == '__main__':
  Pan3=Pane()
  Pan3.addText()
  Pan3.addRect()
- 
+ done = False
+ while not done:
+     for event in pygame.event.get():
+         if event.type == pygame.QUIT:
+             done = True 
