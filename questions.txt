@@ -1,0 +1,48 @@
+Q: Match any of the previous
+A: *
+
+Q: Match zero or one of the previous
+A: ?
+
+Q: Used to escape a special character
+A: +
+
+Q: Used to escape a special chatacter 
+A: \
+
+Q:  Matches any characters
+A: .
+
+Q: Groups characters
+A: ( )
+
+Q: Match a range of characters
+A: [ ]
+
+ 
+
+8.	Q: Match previous or next character
+
+A: | 
+
+
+
+9.	Q: Matches a specific number of occurences 
+
+A: { }
+
+
+
+10.	Q: Beginning of String 
+
+A: ^
+
+ 
+
+11.	Q: End of String
+
+A: $
+
+
+
+
