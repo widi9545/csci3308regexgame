@@ -16,13 +16,13 @@ class Pane(object):
         pygame.init()
         self.font = pygame.font.SysFont('Arial', 25)
         pygame.display.set_caption('Box Test')
-        self.screen = pygame.display.set_mode((600,400))
+        self.screen = pygame.display.set_mode((1000,1000))
         self.screen.fill((white))
         pygame.display.update()
 
 	
-    def addRect(self):
-		pygame.draw.rect(self.screen,blue,(200,150,100,50))
+    def addRect(self, x, y):
+		pygame.draw.rect(self.screen,blue,(x,y,150,75),1)
 		pygame.display.flip()
 		#done = False				
 		#while not done:
@@ -50,8 +50,13 @@ class Pane(object):
 if __name__ == '__main__':
  Pan3=Pane()
  Pan3.addText()
- Pan3.addRect()
+ #Pan3.addRect()
+ x=150
+ y=75
  done = False
+ for z in range(1,5):
+     for m in range(3,7):
+         Pan3.addRect(z*x,m*y);
  while not done:
      for event in pygame.event.get():
          if event.type == pygame.QUIT:
