@@ -10,15 +10,6 @@ CREATE TABLE highscores(scores integer, difficulty integer);
 
 
 
-INSERT INTO questionsMissed VALUES(1,1);
-INSERT INTO questionsMissed VALUES(2,2);
-INSERT INTO highscores VALUES(100, 1);
-INSERT INTO highscores VALUES(200, 2);
-INSERT INTO highscores VALUES(300, 1);
-
-
-
-
 INSERT INTO questions VALUES(1, "contains a", 1);
 INSERT INTO answers VALUES(1, 1, "a");
 INSERT INTO questions VALUES(2, "contains ing", 1);
@@ -57,6 +48,25 @@ INSERT INTO questions VALUES(18, "contains double letters", 2);
 INSERT INTO answers VALUES(18, 18, "([a-zA-Z])\1");
 INSERT INTO questions VALUES(19, "number between 1000 and 9999", 2);
 INSERT INTO answers VALUES(19, 19, "\b[1-9][0-9]{3}\b");
+INSERT INTO questions VALUES(20, "Check beginning of file", 1);
+INSERT INTO answers VALUES(20,20, "^");
+INSERT INTO questions VALUES(21, "Check end of file", 1);
+INSERT INTO answers VALUES(21, 21, "$");
+INSERT INTO questions VALUES(22, "Check if p is at beginning of file",1);
+INSERT INTO answers VALUES(22,22,"^[p]");
+INSERT INTO questions VALUES(23, "Check if word has a space",1);
+INSERT INTO answers VALUES(23,23,"\s");
+INSERT INTO questions VALUES(24, "Check if word has a tab",1);
+INSERT INTO answers VALUES(24, 24, "\t");
+INSERT INTO questions VALUES(25, "Match numbers",1);
+INSERT INTO answers VALUES(25, 25, "[0-9]");
+INSERT INTO questions VALUES(26,"Check if line does not end with a number",1);
+INSERT INTO answers VALUES(26,26,"[^0-9]$");
+INSERT INTO questions VALUES(27, "Match lowercase letter or number",1);
+INSERT INTO answers VALUES(27,27,"[a-z0-9]");
+INSERT INTO questions VALUES(28, "Match capital letter or number",1);
+INSERT INTO answers VALUES(28,28,"[A-Z0-9]");
+
 
 
 
