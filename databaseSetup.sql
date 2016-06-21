@@ -72,7 +72,26 @@ INSERT INTO questions VALUES(30, "Match a username that has letters and numbers,
 INSERT INTO answers VALUES(30,30,"^[a-z0-9]{0-16}$");
 INSERT INTO questions VALUES(31, "Match a zip code", 3);
 INSERT INTO answers VALUES(31,31,"\b\d{5}");
-
+INSERT INTO questions VALUES(32,"Match any of previous",1);
+INSERT INTO answers VALUES(32,32,"*");
+INSERT INTO questions VALUES(33, "Match zero or one of previous",1);
+INSERT INTO answers VALUES(33,33,"?");
+INSERT INTO questions VALUES(34,"Used to escape a special character",1);
+INSERT INTO answers VALUES(34,34,"\\");
+INSERT INTO questions VALUES(35,"Match any character",1);
+INSERT INTO answers VALUES(35,35,".");
+INSERT INTO questions VALUES(36, "Group characters",1);
+INSERT INTO answers VALUES(36,36,"()");
+INSERT INTO questions VALUES(37, "Match range of characters",1);
+INSERT INTO answers VALUES(37,37,"[]");
+INSERT INTO questions VALUES(38, "Match previous or next character",2);
+INSERT INTO answers VALUES(38,38,"|");
+INSERT INTO questions VALUES(39, "Match specific nuber of occurences",2);
+INSERT INTO answers VALUES(39,39,"{}");
+INSERT INTO questions VALUES(40, "Beginning of string",1);
+INSERT INTO answers VALUES(40,40,"^");
+INSERT INTO questions VALUES(41,"End of string",1);
+INSERT INTO answers VALUES(41,41,"$");
 
 
 
