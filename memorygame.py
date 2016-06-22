@@ -40,7 +40,7 @@ def main():
             screen.blit(card.image, [CARD_WIDTH*z+z,CARD_HEIGHT*m+m])
             card.rect.x=CARD_WIDTH*z+z
             card.rect.y=CARD_HEIGHT*m+m
-            print "Card created"
+            #print "Card created"
             k+=1
 
     while not done:
