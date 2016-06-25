@@ -1,0 +1,14 @@
+OscarGandara
+Hard
+1.\b(?=\w*[ab])\w+\b
+Ans: Find all words that conatin "a" or "b"
+2. \b([A-zA-Z]+)\s+\1\b
+Ans: Find repeated words
+3.[a-zA-Z]+[0-9]{1,}$
+Ans: Find strings that start with letters followed by numbers.
+4.\b(?!word\b)\w+
+Ans: Find all except a specific word.
+5.^\+(?:[0-9]•?){6,14}[0-9]$
+Ans: Check international phone numbers.
+6.[^\x00-\x7F]+\*(?:[^\x00-\x7F]|)*
+Ans: Matches all non-ascii characters

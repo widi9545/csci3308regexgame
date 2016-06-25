@@ -2,10 +2,10 @@
 import MySQLdb
 from playerClass import player
 import random
+db=MySQLdb.connect()
 
 
-
-db = MySQLdb.connect("127.0.0.1", "root", "root", "questions")
+db = MySQLdb.connect("localhost", "regexMemoryGame", "root", "questions")
 cur = db.cursor()
 questions =[]
 
