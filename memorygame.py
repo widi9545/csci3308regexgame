@@ -24,7 +24,8 @@ db = MySQLdb.connect("127.0.0.1", "admin", "^regexiscool$", "regexMemoryGame")
 cur = db.cursor()
 questions =[]
 
-
+def testerTesting():
+    return 8
 
 
 def dbRead():
@@ -41,6 +42,20 @@ def findQID(message):
         qid=dbRead()
     return qid
 
+def cardinit(card_group, screen):
+    card_words=["contains a","a","s$","starts with q","[0-9]","[aeiou]$","contains a number","ends with s","first three characters are numbers","ends with a vowel","^q","^[0-9]{3}","contains a period","gr[ae]y","match gray or grey","\\."]
+    k=0
+    for z in range(1,5):
+        for m in range(3,7):
+            card=Card(WHITE,CARD_WIDTH,CARD_HEIGHT, card_words[k])
+            card_group.add(card)
+            screen.blit(card.image, [CARD_WIDTH*z+z,CARD_HEIGHT*m+m])
+            card.rect.x=CARD_WIDTH*z+z
+            card.rect.y=CARD_HEIGHT*m+m
+            k+=1
+ 
+
+ 
 
 def main():
     pygame.init()
@@ -50,18 +65,8 @@ def main():
     card_group=pygame.sprite.Group()
     card_turned_group=pygame.sprite.Group()
     clock=pygame.time.Clock()
-    card_words=["contains a","a","s$","starts with q","[0-9]","[aeiou]$","contains a number","ends with s","first three characters are numbers","ends with a vowel","^q","^[0-9]{3}","contains a period","gr[ae]y","match gray or grey","\\."]
-    k=0
     card_turned=0
-    for z in range(1,5):
-        for m in range(3,7):
-            card=Card(WHITE,CARD_WIDTH,CARD_HEIGHT, card_words[k])
-            card_group.add(card)
-            screen.blit(card.image, [CARD_WIDTH*z+z,CARD_HEIGHT*m+m])
-            card.rect.x=CARD_WIDTH*z+z
-            card.rect.y=CARD_HEIGHT*m+m
-            k+=1
-
+    cardinit(card_group, screen)
     while not done:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -87,15 +92,12 @@ def main():
                             qid[x]=findQID(i.message)
                             x+=1
                         if qid[0] == qid[1]:
-                            card_turned_group.empty()
+                           card_turned_group.empty()
                         for i in card_turned_group:
                             i.image.fill(WHITE)
                             card_turned_group.remove(i)
                         card_turned=0
         screen.fill(BLACK)
-        #card = Card(WHITE,100,100)
-        #card_group=pygame.sprite.Group()
-        #card_group.add(card)
         card_group.draw(screen)
         card_group.update()
         pygame.display.update()
