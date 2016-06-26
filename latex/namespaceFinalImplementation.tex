@@ -1,0 +1,122 @@
+\hypertarget{namespaceFinalImplementation}{}\section{Final\+Implementation Namespace Reference}
+\label{namespaceFinalImplementation}\index{Final\+Implementation@{Final\+Implementation}}
+
+
+This is the final implementation for the terminal version of our game.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceFinalImplementation_a25c3c3849d1e0714aa3169c3373a8ca9}{fill\+Question\+List\+Basic} ()
+\begin{DoxyCompactList}\small\item\em These are the functions for our \char`\"{}easy\char`\"{} mode, using basic questions. \end{DoxyCompactList}\item 
+def \hyperlink{namespaceFinalImplementation_a3ee1313f80091058022140774405d079}{fill\+Answer\+List\+Basic} ()
+\begin{DoxyCompactList}\small\item\em These are the functions for our \char`\"{}easy\char`\"{} mode, using basic questions. \end{DoxyCompactList}\item 
+def \hyperlink{namespaceFinalImplementation_af8efb9340c8853e9770c4202b800f861}{fill\+Question\+List\+Difficulty} (difficulty\+String)
+\begin{DoxyCompactList}\small\item\em Here is the function for our difficulty selector. \end{DoxyCompactList}\item 
+def \hyperlink{namespaceFinalImplementation_aee57577289eb0d9d0dbd6be0d7e2b34d}{fill\+Answer\+List\+Difficulty} (difficulty\+String)
+\begin{DoxyCompactList}\small\item\em Here is the function for our difficulty selector. \end{DoxyCompactList}\item 
+def \hyperlink{namespaceFinalImplementation_a9c2ba6f23e14c2ff8869b0656ba45b53}{game\+Declaration} ()
+\begin{DoxyCompactList}\small\item\em We declare an instance of the \char`\"{}player\char`\"{} class that we have declared. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceFinalImplementation_af4b43e181e5f0130a722add3a95a106b}{db} = My\+S\+Q\+Ldb.\+connect(\char`\"{}127.\+0.\+0.\+1\char`\"{}, \char`\"{}root\char`\"{}, \char`\"{}root\char`\"{}, \char`\"{}regex\+Questions\char`\"{})
+\begin{DoxyCompactList}\small\item\em This is the DB that we connect to, it holds all of our questions. \end{DoxyCompactList}\item 
+\hyperlink{namespaceFinalImplementation_ab2b4f562e62481705272b729fddd627d}{cur} = db.\+cursor()
+\item 
+list \hyperlink{namespaceFinalImplementation_ab67267722fb7f86dae8a04110e61ee73}{question\+List} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em This is the list that we append all of our questions to. \end{DoxyCompactList}\item 
+list \hyperlink{namespaceFinalImplementation_a449b8b5f378a8f6fd17e7b6047c4f3a0}{answer\+List} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em This is the list we append all of our answers to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the final implementation for the terminal version of our game. 
+
+We have implemented our \textquotesingle{}hardness-\/selection\textquotesingle{} functionality, we pull in from our database of questions and we are able to create a player and track their score. 
+
+\subsection{Function Documentation}
+\index{Final\+Implementation@{Final\+Implementation}!fill\+Answer\+List\+Basic@{fill\+Answer\+List\+Basic}}
+\index{fill\+Answer\+List\+Basic@{fill\+Answer\+List\+Basic}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{fill\+Answer\+List\+Basic()}{fillAnswerListBasic()}}]{\setlength{\rightskip}{0pt plus 5cm}def Final\+Implementation.\+fill\+Answer\+List\+Basic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceFinalImplementation_a3ee1313f80091058022140774405d079}{}\label{namespaceFinalImplementation_a3ee1313f80091058022140774405d079}
+
+
+These are the functions for our \char`\"{}easy\char`\"{} mode, using basic questions. 
+
+We pull a single question/answer from the database at a time using a continuous for loop. We then append the lists with questions/answers \index{Final\+Implementation@{Final\+Implementation}!fill\+Answer\+List\+Difficulty@{fill\+Answer\+List\+Difficulty}}
+\index{fill\+Answer\+List\+Difficulty@{fill\+Answer\+List\+Difficulty}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{fill\+Answer\+List\+Difficulty(difficulty\+String)}{fillAnswerListDifficulty(difficultyString)}}]{\setlength{\rightskip}{0pt plus 5cm}def Final\+Implementation.\+fill\+Answer\+List\+Difficulty (
+\begin{DoxyParamCaption}
+\item[{}]{difficulty\+String}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceFinalImplementation_aee57577289eb0d9d0dbd6be0d7e2b34d}{}\label{namespaceFinalImplementation_aee57577289eb0d9d0dbd6be0d7e2b34d}
+
+
+Here is the function for our difficulty selector. 
+
+It follows the same principle as above, except it has a input string check for Hard/\+Medium settings. This fills the Answer List that we have \index{Final\+Implementation@{Final\+Implementation}!fill\+Question\+List\+Basic@{fill\+Question\+List\+Basic}}
+\index{fill\+Question\+List\+Basic@{fill\+Question\+List\+Basic}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{fill\+Question\+List\+Basic()}{fillQuestionListBasic()}}]{\setlength{\rightskip}{0pt plus 5cm}def Final\+Implementation.\+fill\+Question\+List\+Basic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceFinalImplementation_a25c3c3849d1e0714aa3169c3373a8ca9}{}\label{namespaceFinalImplementation_a25c3c3849d1e0714aa3169c3373a8ca9}
+
+
+These are the functions for our \char`\"{}easy\char`\"{} mode, using basic questions. 
+
+We pull a single question/answer from the database at a time using a continuous for loop. We then append the lists with questions/answers\char`\"{}\char`\"{}" \index{Final\+Implementation@{Final\+Implementation}!fill\+Question\+List\+Difficulty@{fill\+Question\+List\+Difficulty}}
+\index{fill\+Question\+List\+Difficulty@{fill\+Question\+List\+Difficulty}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{fill\+Question\+List\+Difficulty(difficulty\+String)}{fillQuestionListDifficulty(difficultyString)}}]{\setlength{\rightskip}{0pt plus 5cm}def Final\+Implementation.\+fill\+Question\+List\+Difficulty (
+\begin{DoxyParamCaption}
+\item[{}]{difficulty\+String}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceFinalImplementation_af8efb9340c8853e9770c4202b800f861}{}\label{namespaceFinalImplementation_af8efb9340c8853e9770c4202b800f861}
+
+
+Here is the function for our difficulty selector. 
+
+It follows the same principle as above, except it has a input string check for Hard/\+Medium settings \index{Final\+Implementation@{Final\+Implementation}!game\+Declaration@{game\+Declaration}}
+\index{game\+Declaration@{game\+Declaration}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{game\+Declaration()}{gameDeclaration()}}]{\setlength{\rightskip}{0pt plus 5cm}def Final\+Implementation.\+game\+Declaration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceFinalImplementation_a9c2ba6f23e14c2ff8869b0656ba45b53}{}\label{namespaceFinalImplementation_a9c2ba6f23e14c2ff8869b0656ba45b53}
+
+
+We declare an instance of the \char`\"{}player\char`\"{} class that we have declared. 
+
+
+
+\subsection{Variable Documentation}
+\index{Final\+Implementation@{Final\+Implementation}!answer\+List@{answer\+List}}
+\index{answer\+List@{answer\+List}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{answer\+List}{answerList}}]{\setlength{\rightskip}{0pt plus 5cm}Final\+Implementation.\+answer\+List = \mbox{[}$\,$\mbox{]}}\hypertarget{namespaceFinalImplementation_a449b8b5f378a8f6fd17e7b6047c4f3a0}{}\label{namespaceFinalImplementation_a449b8b5f378a8f6fd17e7b6047c4f3a0}
+
+
+This is the list we append all of our answers to. 
+
+It\textquotesingle{}s also a simple python list. \index{Final\+Implementation@{Final\+Implementation}!cur@{cur}}
+\index{cur@{cur}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{cur}{cur}}]{\setlength{\rightskip}{0pt plus 5cm}Final\+Implementation.\+cur = db.\+cursor()}\hypertarget{namespaceFinalImplementation_ab2b4f562e62481705272b729fddd627d}{}\label{namespaceFinalImplementation_ab2b4f562e62481705272b729fddd627d}
+\index{Final\+Implementation@{Final\+Implementation}!db@{db}}
+\index{db@{db}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{db}{db}}]{\setlength{\rightskip}{0pt plus 5cm}Final\+Implementation.\+db = My\+S\+Q\+Ldb.\+connect(\char`\"{}127.\+0.\+0.\+1\char`\"{}, \char`\"{}root\char`\"{}, \char`\"{}root\char`\"{}, \char`\"{}regex\+Questions\char`\"{})}\hypertarget{namespaceFinalImplementation_af4b43e181e5f0130a722add3a95a106b}{}\label{namespaceFinalImplementation_af4b43e181e5f0130a722add3a95a106b}
+
+
+This is the DB that we connect to, it holds all of our questions. 
+
+\index{Final\+Implementation@{Final\+Implementation}!question\+List@{question\+List}}
+\index{question\+List@{question\+List}!Final\+Implementation@{Final\+Implementation}}
+\subsubsection[{\texorpdfstring{question\+List}{questionList}}]{\setlength{\rightskip}{0pt plus 5cm}Final\+Implementation.\+question\+List = \mbox{[}$\,$\mbox{]}}\hypertarget{namespaceFinalImplementation_ab67267722fb7f86dae8a04110e61ee73}{}\label{namespaceFinalImplementation_ab67267722fb7f86dae8a04110e61ee73}
+
+
+This is the list that we append all of our questions to. 
+
+It\textquotesingle{}s a simple python list 
