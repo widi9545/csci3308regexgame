@@ -1,0 +1,25 @@
+Oscar Gandara 
+Regex Questions
+Easyish
+1. [q]{3,}
+Ans: Find 3 or more q.
+2. \S 
+Ans: Not whitespace characters
+3. Match Roman Numerals
+Ans:^[MDCLXVI]+$
+4.^[0x]+[0-9a-f]{1,}
+Ans:Find hexadecimal numbers
+5.\b[01]+\b
+Ans: Find all binary numbers.
+6.\b\w{9}\b
+Ans: Find 9 letter words
+7.f(oo|a|ac)t
+Ans:Find the words "foot" or "fat"or "fact"
+8.H{2,3}ey
+Ans: Finds "Heey" and "Heey" but not "Hey"
+9.[^aeiouAEIOU]+$
+Ans: Find words without vowels.
+10."[^"]*"
+Ans:Find all strings with quotation marks.
+
+

@@ -3,7 +3,8 @@
 -- Host: localhost    Database: regexMemoryGame
 -- ------------------------------------------------------
 -- Server version	5.7.12-0ubuntu1
-
+GRANT ALL <privileges> ON regexMemoryGame.* TO 'user'@'localhost' WITH GRANT OPTION;
+flush privileges;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
