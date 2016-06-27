@@ -13,7 +13,7 @@ import random
 
 ##@var db
 #This is the DB that we connect to, it holds all of our questions.
-db = MySQLdb.connect("127.0.0.1", "root", "root", "regexQuestions") 
+db = MySQLdb.connect("127.0.0.1", "admin", "^regexiscool$", "regexMemoryGame") 
 cur = db.cursor()
 ##@var questionList
 #This is the list that we append all of our questions to. It's a simple python list
@@ -71,7 +71,7 @@ def fillQuestionListDifficulty(difficultyString):
 			questionList.append(row)
 			row = cur.fetchone()
 		return 1
-
+        return 0
 ##Here is the function for our difficulty selector. It follows the same principle as above,
 #except it has a input string check for Hard/Medium settings. This fills the Answer List that we have
 		
@@ -92,7 +92,8 @@ def fillAnswerListDifficulty(difficultyString):
 			answerList.append(row)
 			row = cur.fetchone()
 		return 1
-		
+        return 0		
+     
 		
 ##We declare an instance of the "player" class that we have declared
 #
