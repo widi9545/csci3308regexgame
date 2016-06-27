@@ -13,7 +13,7 @@ import random
 
 ##@var db
 #This is the DB that we connect to, it holds all of our questions.
-db = MySQLdb.connect("127.0.0.1", "admin", "^regexiscool$", "regexMemoryGame") 
+db = MySQLdb.connect("127.0.0.1", "root", "root", "regexQuestions") 
 cur = db.cursor()
 ##@var questionList
 #This is the list that we append all of our questions to. It's a simple python list

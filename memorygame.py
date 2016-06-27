@@ -20,12 +20,10 @@ class Card(pygame.sprite.Sprite):
         self.rect=self.image.get_rect()
     
         
-db = MySQLdb.connect("127.0.0.1", "admin", "^regexiscool$", "regexMemoryGame")
+db = MySQLdb.connect("127.0.0.1", "root", "root", "regexQuestions")
 cur = db.cursor()
 questions =[]
 
-def testerTesting():
-    return 8
 
 
 def dbRead():

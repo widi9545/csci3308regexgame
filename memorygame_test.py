@@ -10,9 +10,6 @@ class MemorygameTestCase(unittest.TestCase):
         self.assertTrue(False, "Testing to make sure tests fail")
     def testTrue(self):
         self.assertTrue(True)
-    def testTests(self):
-        thing=testerTesting()
-        self.assertEqual(thing, 8, "Error in testing method, do more research")
     def testFindQuestionQID(self):
         test=findQID('End of string')
         actualID=41
